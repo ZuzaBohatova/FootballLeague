@@ -1,0 +1,54 @@
+Tym
+jmeno PK varchar
+poradi integer
+pocet_vyher integer
+pocet_proher integer
+pocet_remiz integer
+pocet_bodu integer
+goly_dal integer
+goly_dostal integer
+
+Hrac
+id PK integer
+jmeno varchar
+vek integer
+pozice varchar
+narodnost varchar 
+goly integer
+zlute_karty integer
+cervene_karty integer
+
+Zapas
+id PK integer
+datum timestamp 
+domaci FK varchar 
+hoste FK varchar
+goly_domaci integer
+goly_hoste integer
+
+Stadion
+jmeno PK varchar
+kapacita integer
+
+Rozhodci 
+id PK integer
+jmeno varchar
+pocet_odpiskanych_zapasu integer
+narodnost varchar 
+vek integer
+
+Trener 
+id PK integer
+jmeno varchar
+narodnost varchar
+vek integer
+
+Adresa 
+id PK integer
+ulice varchar
+cislo integer
+mesto varchar
+psc integer
+stat varchar
+
+
